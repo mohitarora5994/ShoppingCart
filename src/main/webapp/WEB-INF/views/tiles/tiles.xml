@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+
+<tiles-definitions>
+
+	<definition name="base-definition" template="/WEB-INF/views/tiles/layouts/defaultLayout.jsp">
+		<put-attribute name="head" value="/WEB-INF/views/tiles/template/defaultHead.jsp"/>
+		<put-attribute name="header" value="/WEB-INF/views/tiles/template/defaultHeader.jsp"/>
+		<put-attribute name="title" value=""/>
+		<put-attribute name="menu" value="/WEB-INF/views/tiles/template/defaultMenu.jsp"/>
+		<put-attribute name="body" value=""/>
+		<put-attribute name="footer" value="/WEB-INF/views/tiles/template/defaultFooter.jsp"/>
+	</definition>
+	
+	<definition name="admin-definition" template="/WEB-INF/views/tiles/layouts/defaultLayout.jsp">
+		<put-attribute name="head" value="/WEB-INF/views/tiles/template/defaultHead.jsp"/>
+		<put-attribute name="header" value="/WEB-INF/views/jsp/admin/adminHeader.jsp"/>
+		<put-attribute name="title" value=""/>
+		<put-attribute name="menu" value="/WEB-INF/views/tiles/template/defaultMenu.jsp"/>
+		<put-attribute name="body" value=""/>
+		<put-attribute name="footer" value="/WEB-INF/views/tiles/template/defaultFooter.jsp"/>
+	</definition>
+	
+	<definition name="seller-definition" template="/WEB-INF/views/tiles/layouts/defaultLayout.jsp">
+		<put-attribute name="head" value="/WEB-INF/views/tiles/template/defaultHead.jsp"/>
+		<put-attribute name="header" value="/WEB-INF/views/jsp/seller/sellerHeader.jsp"/>
+		<put-attribute name="title" value=""/>
+		<put-attribute name="menu" value="/WEB-INF/views/tiles/template/defaultMenu.jsp"/>
+		<put-attribute name="body" value=""/>
+		<put-attribute name="footer" value="/WEB-INF/views/tiles/template/defaultFooter.jsp"/>
+	</definition>
+	
+		
+<!-- 	defination for pages -->
+	
+	<definition name="home" extends="base-definition">  
+       <put-attribute name="title" value="Home" />  
+       <put-attribute name="body" value="/WEB-INF/views/jsp/home.jsp" />  
+   </definition> 
+   
+	<definition name="userAccountSetting" extends="base-definition">  
+       <put-attribute name="title" value="User" />  
+       <put-attribute name="body" value="/WEB-INF/views/jsp/user/userAccountSetting.jsp" />  
+   </definition>
+   
+	<definition name="userRemove" extends="base-definition">  
+       <put-attribute name="title" value="User" />  
+       <put-attribute name="body" value="/WEB-INF/views/jsp/user/userRemove.jsp" />  
+   </definition>
+   
+   <definition name="userSaveAddress" extends="base-definition">  
+       <put-attribute name="title" value="User" />  
+       <put-attribute name="body" value="/WEB-INF/views/jsp/user/addAddress.jsp" />  
+   </definition>
+   
+   	<definition name="userAddress" extends="base-definition">  
+       <put-attribute name="title" value="User" />  
+       <put-attribute name="body" value="/WEB-INF/views/jsp/user/userAddress.jsp" />  
+   </definition>
+   
+   	<definition name="userMessage" extends="base-definition">  
+       <put-attribute name="title" value="User" />  
+       <put-attribute name="body" value="/WEB-INF/views/jsp/user/userMessage.jsp" />  
+   </definition>
+   
+   	<definition name="userOrder" extends="base-definition">  
+       <put-attribute name="title" value="User" />  
+       <put-attribute name="body" value="/WEB-INF/views/jsp/user/userOrder.jsp" />  
+   </definition>
+   
+   	<definition name="userPaymentDetails" extends="base-definition">  
+       <put-attribute name="title" value="User" />  
+       <put-attribute name="body" value="/WEB-INF/views/jsp/user/userPaymentDetails.jsp" />  
+   </definition>
+   
+	<definition name="cancelOrder" extends="base-definition">  
+       <put-attribute name="title" value="Home" />  
+       <put-attribute name="body" value="/WEB-INF/views/jsp/cancelOrder.jsp" />  
+   </definition> 
+     
+   <definition name="product" extends="base-definition">  
+       <put-attribute name="title" value="Home" />  
+       <put-attribute name="body" value="/WEB-INF/views/jsp/product.jsp" />  
+   </definition>  
+   
+   	<definition name="userInfo" extends="base-definition">  
+       <put-attribute name="title" value="Home" />  
+       <put-attribute name="body" value="/WEB-INF/views/jsp/user.jsp" />  
+   </definition> 
+   
+   	<definition name="products" extends="base-definition">  
+       <put-attribute name="title" value="Home" />  
+       <put-attribute name="body" value="/WEB-INF/views/jsp/products.jsp" />  
+   </definition> 
+   
+   <definition name="register" extends="base-definition">  
+       <put-attribute name="title" value="Register" />  
+       <put-attribute name="body" value="/WEB-INF/views/jsp/register.jsp" />  
+   </definition>  
+   
+	<definition name="login" extends="base-definition">  
+       <put-attribute name="title" value="Login" />  
+       <put-attribute name="body" value="/WEB-INF/views/jsp/login.jsp" />  
+   </definition> 
+    
+   <definition name="wishlist" extends="base-definition">  
+       <put-attribute name="title" value="WishList" />  
+       <put-attribute name="body" value="/WEB-INF/views/jsp/wishlist.jsp" />  
+   </definition>
+   
+   <definition name="cart" extends="base-definition">  
+       <put-attribute name="title" value="MyCart" />  
+       <put-attribute name="body" value="/WEB-INF/views/jsp/mycart.jsp" />  
+   </definition>
+   
+   	<definition name="order" extends="base-definition">  
+       <put-attribute name="title" value="Home" />  
+       <put-attribute name="body" value="/WEB-INF/views/jsp/order.jsp" />  
+	</definition>
+	
+   	<definition name="invoice" extends="base-definition">  
+       <put-attribute name="title" value="Home" />  
+       <put-attribute name="body" value="/WEB-INF/views/jsp/invoice.jsp" />  
+   </definition>
+   
+ <!-- 	defination for Admin-pages -->
+   <definition name="admin" extends="admin-definition">  
+       <put-attribute name="title" value="Admin" />  
+       <put-attribute name="body" value="/WEB-INF/views/jsp/admin/admin.jsp" />  
+   </definition>
+    
+   <definition name="updateProduct" extends="admin-definition">  
+       <put-attribute name="title" value="Admin" />  
+       <put-attribute name="body" value="/WEB-INF/views/jsp/admin/updateProduct.jsp" />  
+   </definition> 
+   
+     <definition name="updateOrder" extends="admin-definition">  
+       <put-attribute name="title" value="Admin" />  
+       <put-attribute name="body" value="/WEB-INF/views/jsp/admin/updateOrder.jsp" />  
+   </definition> 
+   
+   <definition name="addProducts" extends="admin-definition">  
+       <put-attribute name="title" value="Admin" />  
+       <put-attribute name="body" value="/WEB-INF/views/jsp/admin/addProducts.jsp" />  
+   </definition> 
+   
+   <definition name="addProductType" extends="admin-definition">  
+       <put-attribute name="title" value="Admin" />  
+       <put-attribute name="body" value="/WEB-INF/views/jsp/admin/addProductType.jsp" />  
+   </definition> 
+   
+   <definition name="Users" extends="admin-definition">  
+       <put-attribute name="title" value="Admin" />  
+       <put-attribute name="body" value="/WEB-INF/views/jsp/admin/Users.jsp" />  
+   </definition> 
+   
+      <definition name="OrderDetails" extends="admin-definition">  
+       <put-attribute name="title" value="Admin" />  
+       <put-attribute name="body" value="/WEB-INF/views/jsp/admin/order.jsp" />  
+   </definition> 
+   
+   	<definition name="loginAdmin" extends="base-definition">  
+       <put-attribute name="title" value="Login" />  
+       <put-attribute name="body" value="/WEB-INF/views/jsp/admin/loginAdmin.jsp" />  
+   </definition>
+     
+   <definition name="Order" extends="admin-definition">  
+       <put-attribute name="title" value="Home" />  
+       <put-attribute name="body" value="/WEB-INF/views/jsp/admin/order.jsp" />  
+   </definition>
+   
+   <definition name="addSeller" extends="admin-definition">  
+       <put-attribute name="title" value="Home" />  
+       <put-attribute name="body" value="/WEB-INF/views/jsp/admin/addSeller.jsp" />  
+   </definition>
+   
+   
+<!--    seller pages -->
+   
+   <definition name="seller" extends="seller-definition">  
+       <put-attribute name="title" value="Home" />  
+       <put-attribute name="body" value="/WEB-INF/views/jsp/seller/seller.jsp" />  
+   </definition>
+   <definition name="addSellerProducts" extends="seller-definition">  
+       <put-attribute name="title" value="Home" />  
+       <put-attribute name="body" value="/WEB-INF/views/jsp/seller/addProducts.jsp" />  
+   </definition>
+    <definition name="sellerInfo" extends="seller-definition">  
+       <put-attribute name="title" value="Home" />  
+       <put-attribute name="body" value="/WEB-INF/views/jsp/seller/sellerInfo.jsp" />  
+   </definition>
+    <definition name="updateSellerProducts" extends="seller-definition">  
+       <put-attribute name="title" value="Home" />  
+       <put-attribute name="body" value="/WEB-INF/views/jsp/seller/updateProducts.jsp" />  
+   </definition>
+    <definition name="viewSellerProducts" extends="seller-definition">  
+       <put-attribute name="title" value="Home" />  
+       <put-attribute name="body" value="/WEB-INF/views/jsp/seller/viewProducts.jsp" />  
+   </definition> 
+   
+</tiles-definitions>

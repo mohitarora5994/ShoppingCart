@@ -1,0 +1,85 @@
+﻿#socialLogin{
+	float: right;
+}
+
+.sLogin{
+	margin-right: 20px;
+	background-color: blue;
+	border: thick;
+	border-color: black;
+	border-style: solid;
+}
+
+img.product {
+	height: 160px;
+	width: 140px;
+}
+
+h4{
+	color: blue;
+}
+
+.productImg{
+	float:left;
+	height: 200px;
+	width: 150px;
+}
+.productInfo{
+	float:left;
+	width: 400px;
+	margin-left: 50px;
+}
+
+.header_top {
+	height:100px;
+	background-color :brown;
+}
+.shop-menu ul li a:hover {
+	color:#fe980f;
+	background:#fff;
+}
+div.user{
+	position: fixed;
+	top:50px;
+	right:80px;
+	font-size: 20px;
+}
+div.seller{
+	position: fixed;
+	top:50px;
+	right:80px;
+	font-size: 20px;
+}
+div.message{
+	position: fixed;
+	top:70px;
+	right:39px;
+	font-size: 20px;
+	color:rgb(183, 195, 33);
+}
+div.logo{
+	position: relative;
+	left:30px;
+	top: 30px;
+}
+.shop-menu ul li {
+  display:inline-block;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.shop-menu ul li a {
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+  padding:0;
+  padding-right: 0;
+  margin-top: 10px;
+}
+.footer-bottom {
+  background: #D6D6D0;
+  height: 50px;
+}
+.last{
+	padding-left: 50px;
+	padding-bottom: 10px;
+}
